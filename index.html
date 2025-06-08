@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title id="title">CSS Documentation</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <nav id="navbar">
+    <header>CSS Documentation</header>
+    <a class="nav-link" href="#Introduction">Introduction</a>
+    <a class="nav-link" href="#What_you_should_already_know">What you should already know</a>
+    <a class="nav-link" href="#How_to_apply_CSS">How to apply CSS</a>
+    <a class="nav-link" href="#Common_CSS_Properties">Common CSS Properties</a>
+    <a class="nav-link" href="#Selectors">Selectors</a>
+    <a class="nav-link" href="#Box_Model">Box Model</a>
+    <a class="nav-link" href="#Flexbox">Flexbox</a>
+    <a class="nav-link" href="#Backgrounds">Backgrounds</a>
+    <a class="nav-link" href="#Units_and_Measurements">Units and Measurements</a>
+  </nav>
+
+  <main id="main-doc">
+
+    <section class="main-section" id="Introduction">
+      <header id="head">Introduction</header>
+      <p>CSS, which stands for Cascading Style Sheets, is a fundamental technology used in web development to control the appearance and layout of websites. While HTML is responsible for structuring content on a web page, CSS is used to define how that content should look and feel to users.<p> It allows developers to apply styles such as colors, fonts, spacing, and alignment to various elements on a page.</p> CSS plays a key role in making websites visually appealing, consistent, and user-friendly. One of the most powerful aspects of CSS is its ability to separate content from design. This separation makes it easier to maintain and update websites since the visual presentation can be modified without altering the underlying HTML structure. <p>CSS can be applied in different ways: it can be written directly within HTML tags, included in the head section of the HTML file, or placed in a separate file and linked to the main HTML document. The most effective and scalable method is using an external stylesheet, especially for larger projects. </p>CSS also supports responsive design techniques, which means that web pages can adapt to different screen sizes and devices, such as mobile phones, tablets, and desktops. This flexibility is essential in modern web design. Another strength of CSS is its cascading nature, which allows multiple style rules to interact in a controlled manner. The browser determines which styles to apply based on the order of rules and their specificity. In addition, CSS includes features like animations, transitions, and layout systems such as Flexbox and Grid, which simplify the process of creating dynamic and complex designs. Overall, CSS is an indispensable tool for front-end developers and designers, enabling them to craft beautiful, accessible, and responsive web experiences with precision and efficiency.</p>
+      
+    </section>
+
+    <section class="main-section" id="What_you_should_already_know">
+      <header id="head">What you should already know</header>
+      <p>Before diving into JavaScript, there are a few basic concepts you should already be familiar with to make learning easier and more effective. First, you should have a good understanding of how websites work, including the roles of HTML and CSS. HTML is used to structure the content of web pages, while CSS is used to style and visually present that content. Knowing how to use basic HTML elements like headings, paragraphs, lists, links, images, and forms is important. You should also be comfortable using CSS to apply colors, fonts, margins, padding, and layouts. In addition, it’s helpful to understand how web browsers interpret code and how files are structured in a typical website project. Some experience with using the browser's developer tools, such as inspecting elements and viewing console output, is also useful. Finally, having basic computer skills like creating and editing text files, organizing folders, and using a web browser confidently is assumed. You don’t need to be an expert, but having a foundation in these areas will help you focus on learning JavaScript without being overwhelmed by unrelated concepts. If you’re completely new to web development, it’s a good idea to spend some time learning HTML and CSS before moving on to JavaScript.</p>
+      
+    </section>
+
+    <section class="main-section" id="How_to_apply_CSS">
+      <header id="head">How to apply CSS</header>
+      <p>There are three main ways to apply CSS to an HTML document: inline, internal, and external. Inline CSS is written directly inside an HTML element using the style attribute. This method is useful for quick styling or testing individual elements, but it is not recommended for larger projects because it mixes content with styling and makes the code harder to maintain. Internal CSS is placed within a style tag inside the head section of the HTML file. It allows you to write multiple style rules in one place, which is better than inline CSS for small or single-page websites. However, it still keeps your styling code tied to the HTML file, which can become messy as the project grows. External CSS is the most efficient and organized way to use CSS, especially for larger websites. With this method, you write all your CSS rules in a separate .css file and link it to your HTML document using a link tag. This separates structure from design, making your code cleaner and easier to manage. It also allows multiple pages to share the same styles, which saves time and keeps the design consistent across a website. Understanding when and how to use each method is an important part of learning CSS effectively.</p>
+      
+    </section>
+
+    <section class="main-section" id="Common_CSS_Properties">
+      <header id="head">Common CSS Properties</header>
+      <p>CSS provides numerous properties to style HTML elements. Here are some of the most common ones:</p>
+      <ul>
+        <li><code>color</code> — sets the text color</li>
+
+        <li><code>background-color</code> — sets the         background color of an element</li>
+
+<li><code>font-size</code> — sets the size of the text</li>
+
+<li><code>margin</code> — space outside the element’s border</li>
+
+<li><code>padding</code> — space between content and border inside the element</li>
+
+<li><code>border</code> — defines the border style, width, and color</li>
+
+<li><code>width </code>— sets the element’s width</li>
+
+<li><code>height</code> — sets the element’s height</li>
+
+<li><code>display </code>— controls how an element is displayed (block, inline, flex, etc.)</li>
+
+<li><Code>position</code> — specifies the positioning method (static, relative, absolute, fixed)</li>
+      </ul> 
+    </section>
+
+    <section class="main-section" id="Selectors">
+      <header id="head">Selectors</header>
+      <P>CSS selectors are fundamental tools used to identify and target HTML elements for styling. They allow developers to apply styles precisely, based on the structure, attributes, and states of elements. The simplest selectors target elements by their tag name, such as p for paragraphs or h1 for main headings. Class selectors target all elements with a specific class attribute, using a dot prefix (e.g., .button), enabling reuse of styles across multiple elements. ID selectors, marked with a #, target a single unique element, often used for key page sections. Beyond these basics, combinators expand targeting capabilities: descendant selectors select elements nested anywhere inside another element (div p), child selectors target only direct children (ul > li), adjacent sibling selectors style elements immediately following another (h2 + p), and general sibling selectors target all siblings after a given element (h2 ~ p). Attribute selectors style elements based on attribute values, such as input types (input[type="text"]). Pseudo-classes allow styling elements based on dynamic states, like :hover for mouseover effects or :nth-child() for specific children. Pseudo-elements, like ::before and ::after, insert content or style parts of elements. Mastering selectors is essential for efficient, maintainable CSS, enabling precise control over webpage appearance and behavior without altering HTML structure.</P>
+    </section>
+
+    <section class="main-section" id="Box_Model">
+      <header id="head">Box Model</header>
+      <p>The CSS box model is a foundational concept that describes how every HTML element is visually represented as a rectangular box, composed of four layers: content, padding, border, and margin. At the core is the content area, which holds text, images, or other media. Surrounding the content is padding, which creates space between the content and the border; this area is inside the element and can be used to control spacing without affecting neighboring elements. The border wraps around the padding and content, and its thickness, style, and color can be customized to define the element’s edges. Outside the border lies the margin, the transparent space that separates the element from adjacent elements, effectively controlling layout and preventing visual clutter. Understanding the box model is crucial for managing element size and spacing because the total space an element occupies includes all four layers. The box-sizing property can alter the box model behavior, with the default content-box making width and height apply only to content, while border-box includes padding and borders in the declared width and height. Mastery of the box model ensures designers can create precise, consistent layouts and control how elements interact within a page.</p>
+    </section>
+
+    <section class="main-section" id="Flexbox">
+      <header id="head">Flexbox</header>
+      <p>Flexbox, or the Flexible Box Layout Module, is a modern CSS layout system designed to provide efficient alignment, spacing, and distribution of items within a container, even when their size is dynamic or unknown. Unlike traditional layout models that rely on floats or positioning, flexbox operates in one dimension — arranging items either in a row or a column. The parent container is assigned display: flex, which turns its direct children into flex items. Key properties such as justify-content control the alignment along the main axis (horizontal for rows, vertical for columns), allowing for spacing options like flex-start, center, or space-between. Meanwhile, align-items manages alignment along the cross axis (perpendicular to the main axis), enabling vertical centering or stretching. Flex items can grow, shrink, or maintain a base size using the flex-grow, flex-shrink, and flex-basis properties, often combined in the shorthand flex. Flexbox excels in creating responsive designs because it easily adapts to changing screen sizes without complicated calculations. Its intuitive model helps avoid many pitfalls of earlier layout techniques and supports reordering elements visually with the order property, making flexbox indispensable for modern web design.</p>
+    </section>
+
+    <section class="main-section" id="Backgrounds">
+      <header id="head">Backgrounds</header>
+      <p>CSS backgrounds offer rich control over the visual styling behind elements, extending far beyond simple color fills. The background-color property sets a solid color as the backdrop, while background-image allows insertion of images that can enhance a design’s aesthetics. Background images can be customized with properties like background-repeat to control whether they tile or appear once, background-position to place the image precisely within the element, and background-size to scale images to fit or cover areas. Multiple backgrounds can be layered on a single element by separating values with commas, enabling creative effects like overlays or patterns. Gradients provide a versatile way to create smooth transitions between colors without using image files. CSS supports linear and radial gradients that can be customized by direction, shape, and color stops. Additionally, background-attachment controls whether the background scrolls with the page or remains fixed, useful for parallax effects. Combined, these properties allow developers to create complex, responsive, and visually appealing backgrounds that adapt across devices. Mastering backgrounds helps transform plain elements into engaging, polished interfaces.</p>
+
+    <section class="main-section" id="Units_and_Measurements">
+      <header id="head">Units and Measurements</header>
+       <P>CSS offers a variety of units to define the size, spacing, and layout of elements, essential for creating responsive and accessible designs. Absolute units like pixels (px) provide precise, fixed measurements, ideal for exact control but less flexible across different devices. Relative units such as em and rem scale based on font sizes, with em relative to the parent element’s font size and rem relative to the root (html) font size, promoting scalable and consistent typography. Percentages (%) size elements relative to their parent container’s dimensions, making them valuable for fluid layouts. Viewport units — vw (viewport width), vh (viewport height), vmin, and vmax — scale elements relative to the browser window size, enabling layouts that adapt to screen size changes dynamically. Other units include cm, mm, in, pt, and pc, mainly for print styling. Choosing the right unit is critical: relative units enhance accessibility by respecting user preferences and scaling naturally, while absolute units can provide pixel-perfect design but risk breaking layouts on different devices. Combining these units smartly empowers developers to build responsive, user-friendly interfaces that look great everywhere.
+
+</P>
+    </section>
+
+  </main>
+
+</body>
+</html>
