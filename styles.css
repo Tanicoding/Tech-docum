@@ -1,0 +1,50 @@
+html {
+  scroll-behavior: smooth;
+}
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  display: flex;
+}
+
+#navbar {
+  position: fixed;
+  height: 100vh;
+  width: 200px;
+  overflow-y: scroll;
+  background-color: #f4f4f4;
+  padding: 20px;
+  border-right: 1px solid #ccc;
+}
+
+#navbar a {
+  display: block;
+  padding: 10px;
+  text-decoration: none;
+  color: #333;
+  border-bottom: 1px solid #ccc;
+}
+
+#navbar a:hover {
+  background-color: rgb(20,20,100);
+}
+
+#main-doc {
+margin-left:250px; 
+  padding: 20px;
+  flex-grow: 1;
+}
+@media (max-width: 600px) {
+  #navbar {
+    width: 100%;
+    position: relative;
+  }
+  .container {
+    flex-direction: column;
+  }
+}
+#head{font-weight:bold;
+font-size:25px;}
